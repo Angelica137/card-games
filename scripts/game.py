@@ -37,3 +37,9 @@ def average_even_is_average_odd(hand: list) -> bool:
             count_odd += 1
             odd_sum += elem
     return even_sum/count_even == odd_sum/count_odd
+
+
+def maybe_double_last(hand: list) -> list:
+    if hand[-1] == 11:
+        hand[-1] = 22
+    return hand
