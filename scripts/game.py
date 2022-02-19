@@ -25,15 +25,18 @@ def approx_average_is_average(hand: list) -> bool:
 
 
 def average_even_is_average_odd(hand: list) -> bool:
-    even_sum = 0
-    odd_sum = 0
-    count_even = 0
-    count_odd = 0
-    for elem in hand:
-        if elem % 2 == 0:
-            count_even += 1
-            even_sum += elem
-        if elem % 2 != 0:
-            count_odd += 1
-            odd_sum += elem
-    return even_sum/count_even == odd_sum/count_odd
+    if hand:
+        even_sum = 0
+        odd_sum = 0
+        count_even = 0
+        count_odd = 0
+        for elem in hand:
+            if elem % 2 == 0:
+                count_even += 1
+                even_sum += elem
+            if elem % 2 != 0:
+                count_odd += 1
+                odd_sum += elem
+        return even_sum/count_even == odd_sum/count_odd
+    else:
+        return "Empty hand"
