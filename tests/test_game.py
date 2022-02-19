@@ -35,3 +35,7 @@ def test_approx_average_is_average_3_False():
 
 def test_approx_average_is_average_4_True():
     assert approx_average_is_average([9, 2, 5, 1, 8]) == True
+
+
+def test_approx_average_is_average_even_list_True():
+    assert approx_average_is_average([1, 3, 3, 3]) == False
