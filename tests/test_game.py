@@ -11,3 +11,7 @@ def test_concatenate_rounds_1():
 
 def test_list_contains_round_29_True():
     assert list_contains_round([27, 28, 29, 35, 36], 29) == True
+
+
+def test_list_contains_round_30_False():
+    assert list_contains_round([27, 28, 29, 35, 36], 30) == False
