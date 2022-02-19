@@ -8,3 +8,7 @@ def concatenate_rounds(rounds_1: list, rounds_2: list) -> list:
 
 def list_contains_round(rounds: list, round_number: int) -> bool:
     return round_number in rounds
+
+
+def card_average(hand: list) -> float:
+    return sum(hand)/len(hand)
