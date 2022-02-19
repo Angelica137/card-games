@@ -33,9 +33,7 @@ def average_even_is_average_odd(hand: list) -> bool:
         if elem % 2 == 0:
             count_even += 1
             even_sum += elem
-            even_average = even_sum/count_even
         if elem % 2 != 0:
             count_odd += 1
             odd_sum += elem
-            odd_average = odd_sum/count_odd
-    return odd_average == even_average
+    return even_sum/count_even == odd_sum/count_odd
