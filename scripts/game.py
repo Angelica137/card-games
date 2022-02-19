@@ -18,8 +18,6 @@ def card_average(hand: list) -> float:
 
 
 def approx_average_is_average(hand: list) -> bool:
-    if not hand:
-        return "Empty hand"
     average = sum(hand)/len(hand)
     if average == (hand[0] + hand[-1])/2:
         return True
@@ -27,8 +25,6 @@ def approx_average_is_average(hand: list) -> bool:
 
 
 def average_even_is_average_odd(hand: list) -> bool:
-    if not hand:
-        return "Empty hand"
     even_sum = 0
     odd_sum = 0
     count_even = 0

@@ -41,17 +41,9 @@ def test_approx_average_is_average_even_list_True():
     assert approx_average_is_average([1, 3, 3, 3]) == False
 
 
-def test_approx_average_is_average_even_list_empty():
-    assert approx_average_is_average([]) == "Empty hand"
-
-
 def test_average_even_is_average_odd():
     assert average_even_is_average_odd([1, 2, 3]) == True
 
 
 def test_average_even_is_average_odd_2():
     assert average_even_is_average_odd([1, 2, 3, 4]) == False
-
-
-def test_average_even_is_average_odd_empty():
-    assert average_even_is_average_odd([]) == "Empty hand"
