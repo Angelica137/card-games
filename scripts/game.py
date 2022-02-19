@@ -12,3 +12,7 @@ def list_contains_round(rounds: list, round_number: int) -> bool:
 
 def card_average(hand: list) -> float:
     return sum(hand)/len(hand)
+
+
+def approx_average_is_average(hand: list) -> bool:
+    return sum(hand)/len(hand) == (hand[0] + hand[-1])/2
