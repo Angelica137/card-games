@@ -19,3 +19,7 @@ def test_list_contains_round_30_False():
 
 def test_card_average_6():
     assert card_average([5, 6, 7]) == 6.0
+
+
+def test_approx_average_is_average_1_True():
+    assert approx_average_is_average([1, 2, 3]) == True
