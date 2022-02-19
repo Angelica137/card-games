@@ -17,5 +17,5 @@ def test_list_contains_round_30_False():
     assert list_contains_round([27, 28, 29, 35, 36], 30) == False
 
 
-def test_card_averages_6():
-    assert card_averages([5, 6, 7]) == 6.0
+def test_card_average_6():
+    assert card_average([5, 6, 7]) == 6.0
