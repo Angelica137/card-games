@@ -27,3 +27,7 @@ def test_approx_average_is_average_1_True():
 
 def test_approx_average_is_average_2_True():
     assert approx_average_is_average([2, 3, 4, 8, 8]) == True
+
+
+def test_approx_average_is_average_3_False():
+    assert approx_average_is_average([1, 2, 3, 5, 9]) == False
