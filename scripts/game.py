@@ -25,10 +25,7 @@ def approx_average_is_average(hand: list) -> bool:
 
 
 def average_even_is_average_odd(hand: list) -> bool:
-    even_sum = 0
-    odd_sum = 0
-    count_even = 0
-    count_odd = 0
+    even_sum, odd_sum, count_even, count_odd = 0, 0, 0, 0
     for elem in hand:
         if elem % 2 == 0:
             count_even += 1
