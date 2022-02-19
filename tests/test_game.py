@@ -47,3 +47,7 @@ def test_average_even_is_average_odd():
 
 def test_average_even_is_average_odd_2():
     assert average_even_is_average_odd([1, 2, 3, 4]) == False
+
+
+def test_maybe_double_last_double():
+    assert maybe_double_last_double([5, 9, 11]) == [5, 9, 22]
