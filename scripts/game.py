@@ -4,3 +4,7 @@ def get_rounds(round_number: int) -> list:
 
 def concatenate_rounds(rounds_1: list, rounds_2: list) -> list:
     return rounds_1 + rounds_2
+
+
+def list_contains_round(rounds: list, round_number: int) -> bool:
+    return round_number in rounds
