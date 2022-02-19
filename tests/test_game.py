@@ -23,3 +23,7 @@ def test_card_average_6():
 
 def test_approx_average_is_average_1_True():
     assert approx_average_is_average([1, 2, 3]) == True
+
+
+def test_approx_average_is_average_2_True():
+    assert approx_average_is_average([2, 3, 4, 8, 8]) == True
