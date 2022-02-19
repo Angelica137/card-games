@@ -19,5 +19,4 @@ def card_average(hand: list) -> float:
 
 def approx_average_is_average(hand: list) -> bool:
     average = sum(hand)/len(hand)
-    # or math.ceil(len(hand)) == average
-    return average == (hand[0] + hand[-1])/2
+    return average == (hand[0] + hand[-1])/2 or math.ceil(len(hand)) == average
