@@ -33,9 +33,7 @@ def average_even_is_average_odd(hand: list) -> bool:
     Returns True if the average of the even positions equals the average of the odd
     positions
     """
-    even = hand[::2]
-    odd = hand[1::2]
-    return card_average(even) == card_average(odd)
+    return card_average(hand[::2]) == card_average(hand[1::2])
 
 
 def maybe_double_last(hand: list) -> list:
