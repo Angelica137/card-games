@@ -29,6 +29,13 @@ def approx_average_is_average(hand: list) -> bool:
 
 
 def average_even_is_average_odd(hand: list) -> bool:
+    """
+    Returns True if the average of the even positions equals the average of the odd
+    positions
+    """
+    even = hand[::2]
+    odd = hand[1::2]
+    return card_average(even) == card_average(odd)
     even_sum, odd_sum, count_even, count_odd = 0, 0, 0, 0
     for elem in hand:
         if elem % 2 == 0:
