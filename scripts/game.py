@@ -26,7 +26,7 @@ def approx_average_is_average(hand: list) -> bool:
     average = sum(hand)/len(hand)
     if average == (hand[0] + hand[-1])/2:
         return True
-    return len(hand) % 2 != 0 and hand[math.ceil(len(hand) / 2) - 1] == average
+    return len(hand) % 2 != 0 and hand[math.ceil(len(hand) // 2)] == average
 
 
 def average_even_is_average_odd(hand: list) -> bool:
