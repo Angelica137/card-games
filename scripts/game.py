@@ -23,10 +23,9 @@ def approx_average_is_average(hand: list) -> bool:
     - the average of the first and last number in the had equals the real average
     - the middle card equals the real average
     """
-    average = sum(hand)/len(hand)
-    if average == (hand[0] + hand[-1])/2:
+    if card_average(hand) == (hand[0] + hand[-1])/2:
         return True
-    return len(hand) % 2 != 0 and hand[math.ceil(len(hand) // 2)] == average
+    return len(hand) % 2 != 0 and hand[math.ceil(len(hand) // 2)] == card_average(hand)
 
 
 def average_even_is_average_odd(hand: list) -> bool:
