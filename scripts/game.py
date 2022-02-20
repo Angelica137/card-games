@@ -18,10 +18,15 @@ def card_average(hand: list) -> float:
 
 
 def approx_average_is_average(hand: list) -> bool:
+    """
+    Returns True if either:
+    - the average of the first and last number in the had equals the real average
+    - the middle card equals the real average
+    """
     average = sum(hand)/len(hand)
     if average == (hand[0] + hand[-1])/2:
         return True
-    return len(hand) % 2 != 0 and math.ceil(len(hand)) == average
+    return len(hand) % 2 != 0 and hand[math.ceil(len(hand) / 2) - 1] == average
 
 
 def average_even_is_average_odd(hand: list) -> bool:
