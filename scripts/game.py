@@ -1,4 +1,7 @@
 import math
+import statistics
+import numpy as np
+import timeit
 
 
 def get_rounds(round_number: int) -> list:
@@ -41,3 +44,14 @@ def maybe_double_last(hand: list) -> list:
     if hand[-1] == 11:
         hand[-1] = 22
     return hand
+
+
+l = [5, 6, 7]
+average = card_average(l)
+m = statistics.mean(l)
+n = np.mean(l)
+
+print(average)
+print(m)
+print(n)
+print(timeit.timeit('output = 10*5'))
